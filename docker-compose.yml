@@ -1,0 +1,21 @@
+name: "differential_equations_solver"
+version: "3"
+
+services:
+  dash:
+    container_name: Dash_Visualization
+    restart: always
+    ports:
+      - "8000:8000"
+    build: 
+      context: ./App/
+      dockerfile: Dockerfile
+
+  solver:
+    container_name: Solver_FastAPI
+    restart: always
+    ports:
+      - "8001:8001"
+    build:
+      context: ./API/
+      dockerfile: Dockerfile

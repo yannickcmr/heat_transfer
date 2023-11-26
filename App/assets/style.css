@@ -1,0 +1,53 @@
+:root {
+    --main-background: rgb(32, 90, 96);
+    --secondary-background: rgb(34, 121, 130);
+    --main-highlight: rgb(150, 239, 246);
+    --main-text: rgb(234, 236, 253);
+    --secondary-text: rgb(64, 65, 72);
+}
+
+h1, h2, h3 {
+    color: var(--main-highlight) !important;
+    scale: 0.85;
+}
+
+h4, h5, h6 {
+    color: var(--main-text) !important;
+    scale: 0.85;
+}
+
+hr {
+    color: var(--main-highlight) !important;
+}
+
+p {
+    color: var(--main-text);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  text-align: center;
+}
+
+abbr {
+    color: var(--secondary-text);
+}
+
+.form-control, .dash-dropdown {
+    scale: 0.8;
+}
+
+.dash-dropdown {
+    z-index: 2;
+}
+
+#main-container {
+    background-color: var(--main-background);
+}
+
+.card-header, .card-body {
+    background-color: var(--secondary-background);
+    text-align: center;
+}
